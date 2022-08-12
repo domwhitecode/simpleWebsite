@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+       <head>
+       <title>Page Title</title>
+       <link rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+       <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-
+1.4.5.min.js"></script>
+       </head>
+       <body>
+              <!-- Start of first page -->
+              <div data-role="page" id="welcome">
+                     <div data-role="header">
+                            <h1>Welcome</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+                     <div data-role="content">
+
+                            <a><img src="DrexelU.jpg"/></a>
+                            <div data-role="collapsible" data-collapsed=”false”>
+                                   <h3>Section 1</h3>
+                                   <p>I'm the collapsible content for section 1</p>
+                            </div>
+                            <ul data-role="listview" style="padding-bottom: 25px;" data-inset=”true”>
+                                   <li><a href="#bicycles">Bicycles</a></li>
+                                   <li><a href="#collapsible">Collapsible</a></li>
+                            </ul>
+
+                            <button><a href="#stores">Stores</a></button>
+                            <button><a href="#register">Register</a></button>
+                            <button><a href="#ride">Ride</a></button>
+                     </div>
+                     <!-- basic popup-->
+                     <a href="#popupBasic" data-role="button" data-rel="popup">Open Popup</a>
+                     <div data-role="popup" id="popupBasic">
+                            <p>This is a completely basic popup, no options set.</p>
+                     </div>
+
+                     <!--tooltip popup-->
+                     <p><a href="#popupInfo" data-rel="popup" data-transition="pop" class = "my-tooltip-
+                     btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-
+                     notext">Learn more</a></p>
+
+                     <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">Tooltip</div>
+
+
+
+                     <!--form popup-->
+                     <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                            <form>
+                                   <div style="padding:10px 20px;">
+                                          <h3>Please sign in</h3>
+                                          <label for="un" class="ui-hidden-accessible">Username:
+                                          </label>
+                                          <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a"/>
+                                          <label for="pw" class="ui-hidden-accessible">Password:
+                                          </label>
+                                          <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a" />
+                                          <button type="submit" data-theme="b">Sign in</button>
+                                   </div>
+                            </form>
+                     </div>
+
+
+
+                     <!-- IMAGE POPUP -->
+                     <div data-role="popup" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> 
+                            <img class="popphoto" src="bikes.jpg.png" alt="Students riding">
+                     </div>
+
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+                            <h4>Welcome</h4>
+                     </div><!-- /header -->
+              </div><!-- /page -->
+
+              <!-- Start of stores page -->
+              <div data-role="page" id="stores">
+                     <div data-role="header">
+                            <h1>Stores</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+
+                     <div data-role="content">
+                            <a href="index.html" data-role="button" data-icon="home">home</a>
+                     </div><!-- /content -->
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+                            <h4>CS375</h4>
+                     </div><!-- /footer -->
+
+              </div><!-- /page -->
+
+              <!-- Start of third page -->
+
+              <div data-role="page" id="register">
+                     <div data-role="header">
+                            <h1>Register</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+
+                     <div data-role="content">
+                            <button><a href="#stores">Stores</a></button>
+                            <button><a href="#register">Register</a></button>
+                            <button><a href="#ride">Ride</a></button>
+                            <a data-icon="back" data-rel= "back" back-btn="true">Back</a>
+                     </div><!-- /content -->
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+                            <h4>CS375</h4>
+                     </div><!-- /footer -->
+
+              </div><!-- /page -->
+
+              <!-- Ride page (page 4)-->
+              <div data-role="page" id="ride">
+                     <div data-role="header">
+                            <h1>Ride</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+
+                     <div data-role="content">
+                            <button><a href="#stores">Stores</a></button>
+                            <button><a href="#register">Register</a></button>
+                            <button><a href="#ride">Ride</a></button>
+                            <a data-icon="back" data-rel= "back" back-btn="true">Back</a>
+                     </div><!-- /content -->
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+                            <h4>CS375</h4>
+                     </div><!-- /footer -->
+
+              </div><!-- /page -->
+
+
+
+              <!-- BICYCLE PAGE -->
+              <div data-role="page" id="bicycles">
+                     <div data-role="header">
+                            <h1>Bicycles</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+
+                     <div data-role="content">
+                            <ul data-role="listview">
+                                   <li data-role="list-divider">Mountain</li>
+                                   <li>
+                                          <a href="#bike1" class="ui-link-inherit">
+                                                 <img src="bicycle5.jpg">
+                                                 <h3 class="ui-li-heading">Status</h3>
+                                                 <p class="ui-li-desc">Status description</p>
+                                                 <span class=“ui-li-count”>6</span>
+                                          </a>
+                                          
+
+                                   </li>
+                                   <li>
+                                          <a href="#bike1" class="ui-link-inherit">
+                                                 <img src="bicycle5.jpg ">
+                                                 <h3 class="ui-li-heading">Status</h3>
+                                                 <p class="ui-li-desc">Status description</p>
+                                          </a> 
+                                          <p class="ui-li-aside">$300</p>
+                                   </li>
+
+                                   <li data-role="list-divider">Road</li>
+
+                                   <li>
+                                   <a href="#bike1" class="ui-link-inherit">
+                                          <img src="bicycle5.jpg " >
+                                          <h3 class="ui-li-heading">Status</h3>
+                                          <p class="ui-li-desc">Status description</p>
+                                          </a> 
+                                          <p class="ui-li-aside">$450</p>
+                                   </li>
+                                   <li>
+                                          <a href="#bike1" class="ui-link-inherit">
+                                                 <img src="bicycle5.jpg " >
+                                                 <h3 class="ui-li-heading">Status</h3>
+                                                 <p class="ui-li-desc">Status description</p>
+                                          </a>
+                                          <p class="ui-li-aside">$200</p>
+                                   </li> 
+                            </ul>
+
+
+                            <a data-icon="back" data-rel= "back" back-btn="true">Back</a>
+                     </div><!-- /content -->
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+
+                            <h4>CS375</h4>
+                     </div><!-- /footer -->
+
+              </div>
+
+              <!-- COLLAPSIBLE PAGE --> 
+
+              <div data-role="page" id="collapsible">
+                     <div data-role="header">
+                            <h1>Ride</h1>
+                            <a href="index.html" data-role="button" data-icon="info">info</a>
+                     </div><!-- /header -->
+
+                     <div data-role="content">
+                            <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+                                   <div data-role="collapsible">
+                                          <h3>Section 1</h3>
+                                          <p>I'm the collapsible content for section 1</p> 
+                                   </div>
+                                   <div data-role="collapsible">
+                                          <h3>Section 2</h3>
+                                          <p>I'm the collapsible content for section 2</p>
+                                   </div>
+                                   <div data-role="collapsible">
+                                          <h3>Section 3</h3>
+                                          <p>I'm the collapsible content for section 3</p> 
+                                   </div>
+                            </div> <!-- collapsible-set -->
+                     </div><!-- /content -->
+
+                     <div data-role="footer">
+                            <div data-role="navbar">
+                                   <ul>
+                                          <li> <a href="#bicycles" data-icon="grid">Bicycles</a>
+                                          <li> <a href="#map" data-icon="info">Map</a>
+                                          <li> <a href="" data-icon="search">Search </a>
+                                   </ul> 
+                            </div>
+                            <h4>CS375</h4>
+                     </div><!-- /footer -->
+
+              </div><!-- /page -->
+
+
+
+
+              </body>
